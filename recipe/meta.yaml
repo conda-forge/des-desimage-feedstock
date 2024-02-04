@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 3
+  number: 4
   # this package uses the scripts argument in setuptools and so
   # cannot be noarch: python
   script: {{ PYTHON }} -m pip install . -vv
