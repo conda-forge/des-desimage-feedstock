@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 4
+  number: 5
   # this package uses the scripts argument in setuptools and so
   # cannot be noarch: python
   script: {{ PYTHON }} -m pip install . -vv
@@ -20,6 +20,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - numpy
